@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import Layout from "../components/layout";
 
 export default () => {
   return (
@@ -7,5 +7,5 @@ export default () => {
         <h1>Discover</h1>
       </main>
     </Layout>
-  )
-}
+  );
+};

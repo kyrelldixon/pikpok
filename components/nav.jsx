@@ -26,7 +26,7 @@ export default () => {
   const { pathname } = useRouter();
 
   return (
-    <nav className="fixed w-full py-3 border-b border-gray-300">
+    <nav className="fixed w-full py-3 bg-white border-b border-gray-300">
       <div className="flex items-center justify-between pl-4 pr-3 pr-6 lg:pl-6">
         <div>
           <Slider
