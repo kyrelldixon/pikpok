@@ -21,20 +21,19 @@ const NavLink = ({ href, isActive, className, children }) => {
   );
 };
 
-export default () => {
-  const [isOpen, setIsOpen] = useState(false);
+export default ({ isOpen, toggleOpen }) => {
   const { pathname } = useRouter();
 
   return (
-    <nav className="fixed w-full py-3 bg-white border-b border-gray-300">
+    <nav className="fixed z-10 w-full py-3 bg-white border-b border-gray-300">
       <div className="flex items-center justify-between pl-4 pr-3 pr-6 lg:pl-6">
-        <div>
+        <div className="relative z-50">
           <Slider
             width={21}
             lineHeight={2}
             lineSpacing={5}
             active={isOpen}
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={toggleOpen}
             padding="0px"
           />
           <Link href="/">
