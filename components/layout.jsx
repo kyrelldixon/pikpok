@@ -1,8 +1,10 @@
 import Nav from "./nav";
+import Footer from "./footer";
 
 export default ({ children }) => (
   <div>
     <Nav />
-    <main className="pt-16">{children}</main>
+    {children}
+    <Footer />
   </div>
 );

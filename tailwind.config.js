@@ -1,9 +1,13 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        neon: "#5af6f2"
+      }
+    }
   },
   variants: {
-    borderWidth: ['responsive', 'hover', 'focus'],
+    borderWidth: ["responsive", "hover", "focus"]
   },
-  plugins: [require('@tailwindcss/ui')],
-}
+  plugins: [require("@tailwindcss/ui")]
+};

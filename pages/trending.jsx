@@ -18,7 +18,7 @@ const Card = ({ views }) => (
 
 export default () => (
   <Layout>
-    <main className="px-4 py-16">
+    <main className="px-4 py-32">
       <header className="mb-8">
         <h1 className="text-5xl font-bold leading-tight">Trending</h1>
         <p className="text-lg text-gray-400">

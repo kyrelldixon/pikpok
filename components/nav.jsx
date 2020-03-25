@@ -10,8 +10,8 @@ const NavLink = ({ href, isActive, className, children }) => {
     <Link href={href}>
       <a
         className={classNames(
-          "transition duration-300 ease-in-out text-sm font-semibold hover:border-b-2 hover:border-red-500",
-          isActive && "border-b-2 border-red-500",
+          "transition duration-300 ease-in-out text-sm font-semibold hover:border-b-2 hover:border-neon",
+          isActive && "border-b-2 border-neon",
           className
         )}
       >
@@ -45,7 +45,7 @@ export default () => {
         </div>
         {pathname === "/" ? (
           <Link href="/trending">
-            <a className="px-2 py-1 text-sm font-semibold text-white bg-red-600 rounded-sm lg:py-2 lg:text-base">
+            <a className="px-2 py-1 text-sm font-semibold text-white rounded-sm bg-neon lg:py-2 lg:text-base">
               Watch now
             </a>
           </Link>
