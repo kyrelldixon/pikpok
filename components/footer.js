@@ -8,7 +8,7 @@ export default () => {
         <h2 className="mb-6 text-2xl font-bold">Download now</h2>
         <img
           className="w-48"
-          src="/app-download-trio.webp"
+          src="/app-download-trio.png"
           alt="app download icons"
         />
       </div>
