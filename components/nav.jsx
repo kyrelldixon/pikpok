@@ -1,25 +1,9 @@
-import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Slider } from "react-burgers";
 import { IoIosCloudUpload } from "react-icons/io";
-import classNames from "classnames";
 
-const NavLink = ({ href, isActive, className, children }) => {
-  return (
-    <Link href={href}>
-      <a
-        className={classNames(
-          "transition duration-300 ease-in-out text-sm font-semibold hover:border-b-2 hover:border-neon",
-          isActive && "border-b-2 border-neon",
-          className
-        )}
-      >
-        {children}
-      </a>
-    </Link>
-  );
-};
+import NavLink from "./nav-link";
 
 export default ({ isOpen, toggleOpen }) => {
   const { pathname } = useRouter();
@@ -52,12 +36,12 @@ export default ({ isOpen, toggleOpen }) => {
           <div className="flex">
             <ul className="flex">
               <li className="lg:mr-8">
-                <NavLink href="/trending" isActive={pathname === "/trending"}>
+                <NavLink className="text-sm font-semibold" href="/trending">
                   Trending
                 </NavLink>
               </li>
               <li className="hidden lg:block lg:mr-8">
-                <NavLink href="/discover" isActive={pathname === "/discover"}>
+                <NavLink className="text-sm font-semibold" href="/discover">
                   Discover
                 </NavLink>
               </li>

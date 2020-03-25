@@ -14,7 +14,9 @@ export default () => {
       </div>
       <div className="flex flex-col items-center py-12 text-center">
         <Link href="/">
-          <h2 className="mb-8 text-4xl font-bold cursor-pointer">PikPok</h2>
+          <a>
+            <h2 className="mb-8 text-4xl font-bold">PikPok</h2>
+          </a>
         </Link>
         <nav className="text-sm leading-loose">
           <ul className="mb-8 text-gray-300">

@@ -21,7 +21,7 @@ export default () => (
     <main className="px-4 py-32">
       <header className="mb-8">
         <h1 className="text-5xl font-bold leading-tight">Trending</h1>
-        <p className="text-lg text-gray-400">
+        <p className="max-w-xs text-lg text-gray-400">
           Watch the latest videos from our community
         </p>
       </header>

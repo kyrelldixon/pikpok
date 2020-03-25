@@ -2,17 +2,7 @@ import classNames from "classnames";
 import { useState, useEffect, useRef } from "react";
 import Nav from "./nav";
 import Footer from "./footer";
-
-const SideBar = ({ active }) => (
-  <div
-    className={classNames(
-      "transiton-all duration-200 ease-in-out fixed z-30 w-2/3 h-screen bg-white",
-      !active && "transform -translate-x-full"
-    )}
-  >
-    <h1 className="pt-24">PikPok</h1>
-  </div>
-);
+import SideNav from "./side-nav";
 
 const Mask = ({ active, node }) => (
   <div
@@ -57,7 +47,7 @@ export default ({ children }) => {
   return (
     <div>
       <Nav isOpen={isOpen} toggleOpen={toggleOpen} />
-      <SideBar active={isOpen} />
+      <SideNav active={isOpen} />
       <Mask active={isOpen} node={node} />
       <div>{children}</div>
       <Footer />
